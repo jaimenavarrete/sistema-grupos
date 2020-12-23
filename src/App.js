@@ -1,5 +1,6 @@
 // import NavBar from './Components/NavBar';
 import Login from './Pages/Login';
+import Register from './Pages/Register';
 import {
     BrowserRouter as Router,
     Switch,
@@ -10,10 +11,13 @@ import {
 function App() {
   return (
     <Router>
+        {/* <NavBar /> */}
         <Switch>
             <Route exact path="/login">
-                {/* <NavBar /> */}
                 <Login />
+            </Route>
+            <Route exact path="/register">
+                <Register />
             </Route>
 
             <Route>
