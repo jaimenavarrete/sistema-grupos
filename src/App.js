@@ -1,11 +1,14 @@
 // import NavBar from './Components/NavBar';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
+
+import NotFound from './Pages/NotFound';
+
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Redirect
+    // Redirect
 } from 'react-router-dom';
 
 function App() {
@@ -20,8 +23,11 @@ function App() {
                 <Register />
             </Route>
 
-            <Route>
+            {/* <Route>
                 <Redirect to="/login" />
+            </Route> */}
+            <Route path="*">
+                <NotFound />
             </Route>
         </Switch>
     </Router>

@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-.navbar-item {
-    @apply px-5 py-3 hover:bg-blue-700 cursor-pointer;
+@layer components {
+    .navbar-item {
+        @apply px-5 py-3 hover:bg-blue-700 cursor-pointer;
+    }
+
+    .title {
+        @apply ml-5 font-serif text-xl lg:mr-5 lg:text-2xl;
+    }
+
+    .subtitle-1 {
+        @apply text-white text-5xl font-bold font-serif uppercase text-center mb-10;
+    }
 }

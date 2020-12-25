@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import LogoUDB from './../assets/logo_udb.png';
+import images from './../assets/images';
 
 import LoginInput from './../Components/LoginInput';
 
 function Login() {
     return (
-        <section className="bg-blue-500 min-h-screen p-10">
-            <img src={LogoUDB} alt="Logotipo de la Universidad Don Bosco" className="mx-auto mb-10"/>
-            <h2 className="text-white text-4xl font-bold font-serif uppercase text-center mb-10">Sistema de grupos</h2>
+        <main className="bg-blue-500 min-h-screen p-10">
+            <img src={images[0].img} title={images[0].title} alt={images[0].alt} className="mx-auto mb-10"/>
+            <h2 className="subtitle-1">Sistema de grupos</h2>
 
-            <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-xl">
+            <section className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-xl">
                 <h3 className="uppercase font-bold text-blue-500 text-xl mx-8 mt-7 border-bottom border-b-4 border-blue-500">Inicio de sesión</h3>
                 <form className="p-8">
 
@@ -20,7 +20,7 @@ function Login() {
 
                     <div className="flex justify-between my-7">
                         <label className="cursor-pointer">
-                            <input type="checkbox" className="h-5 w-5 mr-1 rounded-md" /> Recordarme
+                            <input type="checkbox" className="h-5 w-5 mr-1 rounded-md focus:ring-0 focus:ring-offset-0 cursor-pointer" /> Recordarme
                         </label>
                         <Link to="/forgetPassword" className="text-blue-500 font-bold hover:underline">¿Olvidaste tu contraseña?</Link>
                     </div>
@@ -29,8 +29,8 @@ function Login() {
                 </form>
                 <p className="text-center mb-3">¿Aún no tienes cuenta?</p>
                 <Link to="/register" className="text-blue-500 font-bold hover:underline block text-center mb-7">Regístrate</Link>
-            </div>
-        </section>
+            </section>
+        </main>
     )
 }
 
