@@ -6,14 +6,18 @@ import images from './../assets/images';
 import LoginInput from './../Components/LoginInput';
 
 function Login() {
+    const handleSubmit = e => {
+        e.preventDefault();
+    }
+
     return (
         <main className="bg-blue-500 min-h-screen p-10">
             <img src={images[0].img} title={images[0].title} alt={images[0].alt} className="mx-auto mb-10"/>
-            <h2 className="subtitle-1">Sistema de grupos</h2>
+            <h2 className="subtitle-1 p-0">Sistema de grupos</h2>
 
             <section className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-xl">
-                <h3 className="uppercase font-bold text-blue-500 text-xl mx-8 mt-7 border-bottom border-b-4 border-blue-500">Inicio de sesión</h3>
-                <form className="p-8">
+                <h3 className="subtitle-2 mx-8 mt-7">Inicio de sesión</h3>
+                <form onSubmit={handleSubmit} className="p-8">
 
                     <LoginInput type="text" icon="las la-user" placeholder="Usuario:" />
                     <LoginInput type="password" icon="las la-unlock" placeholder="Contraseña:" />

@@ -4,14 +4,22 @@
 
 @layer components {
     .navbar-item {
-        @apply px-5 py-3 hover:bg-blue-700 cursor-pointer;
+        @apply px-5 py-3 hover:bg-blue-600 cursor-pointer;
     }
 
     .title {
-        @apply ml-5 font-serif text-xl lg:mr-5 lg:text-2xl;
+        @apply text-xl uppercase ml-5 font-serif lg:mr-5 lg:text-2xl;
     }
 
     .subtitle-1 {
-        @apply text-white text-5xl font-bold font-serif uppercase text-center mb-10;
+        @apply text-white text-5xl font-bold font-serif uppercase text-center pt-28 mb-10;
+    }
+
+    .subtitle-2 {
+        @apply uppercase font-bold text-blue-500 text-xl border-b-4 border-blue-500;
+    }
+
+    .card {
+        @apply bg-white border-2 border-blue-500 rounded-lg p-7 mx-auto mb-10;
     }
 }

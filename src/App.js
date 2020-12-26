@@ -1,6 +1,9 @@
-// import NavBar from './Components/NavBar';
+import NavBar from './Components/NavBar';
+import Footer from './Components/Footer';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
+
+import UserProfile from './Pages/UserProfile';
 
 import NotFound from './Pages/NotFound';
 
@@ -14,7 +17,6 @@ import {
 function App() {
   return (
     <Router>
-        {/* <NavBar /> */}
         <Switch>
             <Route exact path="/login">
                 <Login />
@@ -22,10 +24,13 @@ function App() {
             <Route exact path="/register">
                 <Register />
             </Route>
+            <Route exact path="/user">
+                <NavBar />
+                <UserProfile />
+                <Footer />
+            </Route>
 
-            {/* <Route>
-                <Redirect to="/login" />
-            </Route> */}
+
             <Route path="*">
                 <NotFound />
             </Route>
