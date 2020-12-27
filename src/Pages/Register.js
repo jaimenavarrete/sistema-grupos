@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import images from './../assets/images';
 
-import LoginInput from './../Components/LoginInput';
+import FormInput from '../Components/FormInput';
 
 function Register() {
     const handleSubmit = e => {
@@ -11,7 +11,7 @@ function Register() {
     }
 
     return (
-        <main className="bg-blue-500 min-h-screen p-10">
+        <main className="bg-blue-500 min-h-screen p-5">
             <img src={images[0].img} title={images[0].title} alt={images[0].alt} className="mx-auto mb-10"/>
             <h2 className="subtitle-1 p-0">Sistema de grupos</h2>
 
@@ -19,14 +19,45 @@ function Register() {
                 <h3 className="subtitle-2 mx-8 mt-7">Registro</h3>
                 <form onSubmit={handleSubmit} className="p-8">
 
-                    <LoginInput type="text" icon="las la-user" placeholder="Nombres:" />
-                    <LoginInput type="text" icon="las la-user" placeholder="Apellidos:" />
-                    <LoginInput type="email" icon="las la-at" placeholder="Email:" />
-                    <LoginInput type="text" icon="las la-phone" placeholder="Teléfono:" />
-                    <LoginInput type="date" icon="las la-birthday-cake" />
-                    <LoginInput type="text" icon="las la-user" placeholder="Nombre de usuario:" />
-                    <LoginInput type="password" icon="las la-unlock" placeholder="Contraseña:" />
-                    <LoginInput type="password" icon="las la-unlock" placeholder="Repetir contraseña:" />
+                    <FormInput 
+                        type="text" 
+                        icon="las la-user" 
+                        placeholder="Nombres:" 
+                    />
+                    <FormInput 
+                        type="text" 
+                        icon="las la-user" 
+                        placeholder="Apellidos:" 
+                    />
+                    <FormInput 
+                        type="email" 
+                        icon="las la-at" 
+                        placeholder="Email:" 
+                    />
+                    <FormInput 
+                        type="text" 
+                        icon="las la-phone" 
+                        placeholder="Teléfono:" 
+                    />
+                    <FormInput 
+                        type="date" 
+                        icon="las la-birthday-cake" 
+                    />
+                    <FormInput 
+                        type="text" 
+                        icon="las la-user" 
+                        placeholder="Nombre de usuario:" 
+                    />
+                    <FormInput 
+                        type="password" 
+                        icon="las la-unlock" 
+                        placeholder="Contraseña:" 
+                    />
+                    <FormInput 
+                        type="password" 
+                        icon="las la-unlock" 
+                        placeholder="Repetir contraseña:" 
+                    />
 
                     <input type="submit" value="Registrarse" className="bg-blue-500 text-white text-lg font-bold w-full py-2 cursor-pointer hover:bg-blue-600" />
                 </form>

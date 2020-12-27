@@ -4,7 +4,11 @@
 
 @layer components {
     .navbar-item {
-        @apply px-5 py-3 hover:bg-blue-600 cursor-pointer;
+        @apply hover:bg-blue-600 cursor-pointer px-4 py-3;
+    }
+
+    .btn {
+        @apply bg-blue-500 text-white font-bold cursor-pointer rounded px-4 py-3 hover:bg-blue-600;
     }
 
     .title {
@@ -12,7 +16,7 @@
     }
 
     .subtitle-1 {
-        @apply text-white text-5xl font-bold font-serif uppercase text-center pt-28 mb-10;
+        @apply text-white text-5xl font-bold font-serif uppercase text-center pt-24 mb-10 lg:pt-32 lg:mb-16;
     }
 
     .subtitle-2 {
@@ -20,6 +24,6 @@
     }
 
     .card {
-        @apply bg-white border-2 border-blue-500 rounded-lg p-7 mx-auto mb-10;
+        @apply bg-white border-2 border-blue-500 shadow-lg rounded-lg p-7 mx-auto mb-10;
     }
 }

@@ -18,13 +18,13 @@ function NotFound() {
     return (
         <main className="bg-blue-500 min-h-screen p-10">
             <section className="max-w-lg mx-auto">
-                <h2 className="subtitle-1 text-8xl mt-10">ERROR 404</h2>
+                <h2 className="subtitle-1 text-6xl pt-0">ERROR 404</h2>
 
-                <p className="text-center text-white text-3xl font-bold uppercase mb-10">Página no encontrada</p>
+                <p className="text-center text-white text-2xl font-bold uppercase mb-10">Página no encontrada</p>
             </section>
             
             <section className="max-w-lg mx-auto text-center">
-                <img src={images[1].img} title={images[1].title} alt={images[1].alt} className="w-40 mx-auto mb-8" />
+                <img src={images[1].img} title={images[1].title} alt={images[1].alt} className="w-40 mx-auto mb-8 opacity-50" />
 
                 <blockquote cite="https://culturizando.com/grandes-frases-don-bosco/" className="text-white text-2xl font-light mb-5">
                     <i className="las la-quote-left mr-5"></i> 

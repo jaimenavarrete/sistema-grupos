@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import { Link } from 'react-router-dom'
+import NavBarButton from './NavBarButton';
 
 import images from './../assets/images';
 
@@ -15,7 +15,6 @@ function NavBar() {
 
             menu.classList.toggle('hidden')
         });
-        // console.log('Nuevo');
     }
 
     const showDropMenu = () => {
@@ -29,7 +28,6 @@ function NavBar() {
 
             dropMenu.classList.toggle('hidden');
         });
-        // console.log('Nuevo2');
     }
 
     useEffect(() => {
@@ -48,32 +46,44 @@ function NavBar() {
                     <i id="btn-navbar" className="las la-bars text-3xl lg:hidden"></i>
                 </div>
                 <ul id="navbar-menu" className="hidden mt-5 lg:flex lg:mt-0">
-                    <li className="navbar-item">
-                        <i className="las la-home"></i> Inicio
-                    </li>
-                    <li className="navbar-item">
-                        <i className="las la-book"></i> Inscripcion
-                    </li>
-                    <li className="navbar-item">
-                        <i className="las la-clipboard"></i> Reportes
-                    </li>
-                    <li className="navbar-item">
-                        <i className="las la-users"></i> Grupos de materia
-                    </li>
+
+                    <NavBarButton 
+                        text="Inicio" 
+                        icon="las la-home" 
+                        url="/login" 
+                    />
+                    <NavBarButton 
+                        text="Inscripcion" 
+                        icon="las la-book" 
+                        url="/login"
+                    />
+                    <NavBarButton 
+                        text="Reportes" 
+                        icon="las la-clipboard" 
+                        url="/login"
+                    />
+                    <NavBarButton 
+                        text="Grupos de materia" 
+                        icon="las la-users" 
+                        url="/login"
+                    />
+
                     <li className="relative">
-                        <div id="btn-drop-menu" className="flex items-center text-lg cursor-pointer p-2 ml-5">
+                        <div id="btn-drop-menu" className="flex items-center text-lg cursor-pointer p-2 ml-5 mr-10">
                             <img src={images[3].img} title={images[3].title} alt={images[2].alt} className="bg-white w-10 h-10 object-cover border-2 border-white rounded-full mr-1" />
                             <i id="icon-drop-menu" className="las la-caret-right"></i>
                         </div>
-                        <ul id="drop-menu" className="absolute bg-blue-500 w-36 mt-3 hidden">
-                            <li className="cursor-pointer p-3 hover:bg-blue-600">
-                                <i className="las la-user"></i> Perfil
-                            </li>
-                            <li className="cursor-pointer p-3 hover:bg-blue-600">
-                                <Link to="/login">
-                                    <i className="las la-door-closed"></i> Cerrar sesión
-                                </Link>
-                            </li>
+                        <ul id="drop-menu" className="absolute bg-blue-500 w-40 mt-3 hidden shadow-lg">
+                            <NavBarButton 
+                                text="Perfil" 
+                                icon="las la-user" 
+                                url="/user"
+                            />
+                            <NavBarButton 
+                                text="Cerrar sesión" 
+                                icon="las la-door-closed"
+                                url="/login"
+                            />
                         </ul>
                     </li>
                 </ul>

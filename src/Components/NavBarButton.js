@@ -1,10 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function NavBarButton({text, icon, url}) {
+import { Link } from 'react-router-dom';
+
+function NavBarButton({ text, icon, url }) {
     return (
         <li className="navbar-item">
-            <i className="las la-home"></i> Inicio
+            <Link to={url}>
+                <i className={ icon }></i> { text }
+            </Link>
         </li>
     );
 }
@@ -12,7 +16,7 @@ function NavBarButton({text, icon, url}) {
 NavBarButton.propTypes = {
     text: PropTypes.string.isRequired,
     icon: PropTypes.string,
-    url: PropTypes.string
+    url: PropTypes.string.isRequired
 }
 
 export default NavBarButton;
