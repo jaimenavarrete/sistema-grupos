@@ -4,6 +4,7 @@ import Login from './Pages/Login';
 import Register from './Pages/Register';
 
 import UserProfile from './Pages/UserProfile';
+import UserModify from './Pages/UserModify';
 
 import NotFound from './Pages/NotFound';
 
@@ -27,6 +28,11 @@ function App() {
             <Route exact path="/user">
                 <NavBar />
                 <UserProfile />
+                <Footer />
+            </Route>
+            <Route exact path="/user-modify">
+                <NavBar />
+                <UserModify />
                 <Footer />
             </Route>
 

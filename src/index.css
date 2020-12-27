@@ -4,11 +4,11 @@
 
 @layer components {
     .navbar-item {
-        @apply hover:bg-blue-600 cursor-pointer px-4 py-3;
+        @apply hover:bg-blue-600 cursor-pointer px-4 py-3 inline-block w-full;
     }
 
     .btn {
-        @apply bg-blue-500 text-white font-bold cursor-pointer rounded px-4 py-3 hover:bg-blue-600;
+        @apply bg-blue-500 text-white font-bold cursor-pointer rounded px-5 py-2 hover:bg-blue-600;
     }
 
     .title {

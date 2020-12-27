@@ -33,7 +33,7 @@ function NavBar() {
     useEffect(() => {
         showMenu();
         showDropMenu();
-    });
+    }, []);
 
     return (
         <header className="bg-blue-500 text-white font-semibold fixed w-full">

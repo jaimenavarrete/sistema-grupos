@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 function NavBarButton({ text, icon, url }) {
     return (
-        <li className="navbar-item">
-            <Link to={url}>
+        <li>
+            <Link to={url} className="navbar-item">
                 <i className={ icon }></i> { text }
             </Link>
         </li>
