@@ -20,7 +20,7 @@ function UserProfile() {
                     </section>
                     
                     <section className="card lg:flex-grow">
-                        <h4 className="subtitle-2 mb-10">Información personal</h4>
+                        <h3 className="subtitle-2 mb-10">Información personal</h3>
                         <p className="flex justify-between mb-3"><span className="font-bold text-gray-700 inline-block">Usuario: </span><span>jaimenava321</span></p>
                         <p className="flex justify-between mb-3"><span className="font-bold text-gray-700 inline-block">Email: </span><span>jaimenava321@gmail.com</span></p>
                         <p className="flex justify-between mb-3"><span className="font-bold text-gray-700">Telefono: </span><span>12345678-9</span></p>
@@ -29,7 +29,7 @@ function UserProfile() {
                 </div>
 
                 <section className="card">
-                    <h4 className="subtitle-2 mb-10">Grupos inscritos</h4>
+                    <h3 className="subtitle-2 mb-10">Grupos inscritos</h3>
                     <div className="flex flex-wrap">
                         <UserSubjectGroup 
                             name="Lenguajes Interp. en el Servidor" 

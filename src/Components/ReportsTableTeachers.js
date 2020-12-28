@@ -11,7 +11,7 @@ function ReportsTeacher() {
                 <ReportsDownload />
 
                 <div className="overflow-x-auto">
-                    <table className="text-left mb-10 min-w-max lg:table">
+                    <table className="text-left mb-10 w-full min-w-max">
                         <thead>
                             <tr className="bg-blue-500 text-white border-2 border-blue-500">
                                 <th className="p-3 font-bold">N°</th>

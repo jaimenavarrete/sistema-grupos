@@ -48,14 +48,9 @@ function NavBar() {
                 <ul id="navbar-menu" className="hidden mt-5 lg:flex lg:mt-0">
 
                     <NavBarButton 
-                        text="Inicio" 
-                        icon="las la-home" 
-                        url="/login" 
-                    />
-                    <NavBarButton 
                         text="Inscripcion" 
                         icon="las la-book" 
-                        url="/login"
+                        url="/subjects-registration"
                     />
                     <NavBarButton 
                         text="Reportes" 
@@ -65,7 +60,12 @@ function NavBar() {
                     <NavBarButton 
                         text="Grupos de materia" 
                         icon="las la-users" 
-                        url="/login"
+                        url="/subjects-groups"
+                    />
+                    <NavBarButton 
+                        text="Grupos de proyecto" 
+                        icon="las la-user-friends" 
+                        url="/project-groups"
                     />
 
                     <li className="relative">

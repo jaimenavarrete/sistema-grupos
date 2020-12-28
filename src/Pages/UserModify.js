@@ -15,10 +15,10 @@ function UserModify() {
             <div className="max-w-7xl mx-auto">
                 <section className="card max-w-md">
                     <img src={images[3].img} alt={images[3].alt} className="object-cover w-32 h-32 mx-auto mb-5 border-2 border-gray-700 rounded-full" />
-                    <button className="btn bg-white text-blue-500 border-2 border-blue-500 block mx-auto hover:bg-blue-500 hover:text-white"><i className="las la-camera-retro"></i> Cambiar foto</button>
+                    <button className="btn-pagination block mx-auto"><i className="las la-camera-retro"></i> Cambiar foto</button>
                 </section>
                 <section className="card max-w-md">
-                    <h4 className="subtitle-2 mb-10">Información personal</h4>
+                    <h3 className="subtitle-2 mb-10">Información personal</h3>
                     <form onSubmit={handleSubmit}>
 
                         <FormInput 

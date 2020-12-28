@@ -6,6 +6,9 @@ import Register from './Pages/Register';
 import UserProfile from './Pages/UserProfile';
 import UserModify from './Pages/UserModify';
 import Reports from './Pages/Reports';
+import SubjectRegistration from './Pages/SubjectRegistration';
+import SubjectGroups from './Pages/SubjectGroups';
+import ProjectGroups from './Pages/ProjectGroups';
 
 import NotFound from './Pages/NotFound';
 
@@ -39,6 +42,21 @@ function App() {
             <Route exact path="/reports">
                 <NavBar />
                 <Reports />
+                <Footer />
+            </Route>
+            <Route exact path="/subjects-registration">
+                <NavBar />
+                <SubjectRegistration />
+                <Footer />
+            </Route>
+            <Route exact path="/subjects-groups">
+                <NavBar />
+                <SubjectGroups />
+                <Footer />
+            </Route>
+            <Route exact path="/project-groups">
+                <NavBar />
+                <ProjectGroups />
                 <Footer />
             </Route>
 
