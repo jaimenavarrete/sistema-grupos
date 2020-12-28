@@ -36,7 +36,7 @@ function NavBar() {
     }, []);
 
     return (
-        <header className="bg-blue-500 text-white font-semibold fixed w-full">
+        <header className="bg-blue-500 text-white font-semibold shadow-md fixed w-full">
             <nav id="navbar" className="p-3 lg:max-w-7xl lg:mx-auto lg:flex lg:justify-between lg:items-center">
                 <div className="flex justify-between items-center">
                     <h1 className="title flex items-center">
@@ -60,7 +60,7 @@ function NavBar() {
                     <NavBarButton 
                         text="Reportes" 
                         icon="las la-clipboard" 
-                        url="/login"
+                        url="/reports"
                     />
                     <NavBarButton 
                         text="Grupos de materia" 

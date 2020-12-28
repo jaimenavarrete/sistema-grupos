@@ -11,6 +11,10 @@
         @apply bg-blue-500 text-white font-bold cursor-pointer rounded px-5 py-2 hover:bg-blue-600;
     }
 
+    .btn-pagination {
+        @apply btn bg-transparent text-blue-500 border-2 border-blue-500 mr-2 mb-2 hover:text-white;
+    }
+
     .title {
         @apply text-xl uppercase ml-5 font-serif lg:mr-5 lg:text-2xl;
     }
