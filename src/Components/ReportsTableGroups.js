@@ -24,7 +24,7 @@ function ReportsGroups() {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr className="border-2 border-blue-500">
+                            <tr className="bg-gray-300 border-2 border-blue-500">
                                 <td className="p-3 font-bold">1</td>
                                 <td className="p-3">Jaime Eduardo</td>
                                 <td className="p-3">Navarrete Cubias</td>
@@ -42,7 +42,7 @@ function ReportsGroups() {
                                 <td className="p-3">5</td>
                                 <td className="p-3">27-12-2020</td>
                             </tr>
-                            <tr className="border-2 border-blue-500">
+                            <tr className="bg-gray-300 border-2 border-blue-500">
                                 <td className="p-3 font-bold">3</td>
                                 <td className="p-3">Jaime Eduardo</td>
                                 <td className="p-3">Navarrete Cubias</td>
@@ -60,7 +60,7 @@ function ReportsGroups() {
                                 <td className="p-3">5</td>
                                 <td className="p-3">27-12-2020</td>
                             </tr>
-                            <tr className="border-2 border-blue-500">
+                            <tr className="bg-gray-300 border-2 border-blue-500">
                                 <td className="p-3 font-bold">3</td>
                                 <td className="p-3">Jaime Eduardo</td>
                                 <td className="p-3">Navarrete Cubias</td>

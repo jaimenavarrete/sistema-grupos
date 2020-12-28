@@ -16,7 +16,7 @@ function UserProfile() {
                         <img src={images[3].img} alt={images[3].alt} className="object-cover w-32 h-32 mx-auto mb-5 border-2 border-gray-700 rounded-full" />
                         <h3 className="text-2xl text-gray-700 font-bold mb-2">Jaime Eduardo Navarrete Cubias</h3>
                         <h4 className="text-blue-500 text-lg font-bold mb-5">Estudiante</h4>
-                        <Link to="user-modify" className="btn inline-block"><i className="las la-pen"></i> Editar perfil</Link>
+                        <Link to="user-modify" className="btn-pagination inline-block"><i className="las la-pen"></i> Editar perfil</Link>
                     </section>
                     
                     <section className="card lg:flex-grow">
@@ -30,41 +30,47 @@ function UserProfile() {
 
                 <section className="card">
                     <h3 className="subtitle-2 mb-10">Grupos inscritos</h3>
-                    <div className="flex flex-wrap">
+                    <div className="grid md:grid-cols-2 md:gap-3 lg:grid-cols-3">
                         <UserSubjectGroup 
                             name="Lenguajes Interp. en el Servidor" 
                             code="LIS104" 
                             group="01T" 
+                            teacher="Jaime Eduardo Navarrete"
                             img={images[4].img}
                         />
                         <UserSubjectGroup 
                             name="Lenguajes Interp. en el Servidor" 
                             code="LIS104" 
                             group="01T" 
+                            teacher="Jaime Eduardo Navarrete" 
                             img={images[4].img}
                         />
                         <UserSubjectGroup 
                             name="Lenguajes Interp. en el Servidor" 
                             code="LIS104" 
                             group="01T" 
+                            teacher="Jaime Eduardo Navarrete" 
                             img={images[4].img}
                         />
                         <UserSubjectGroup 
                             name="Lenguajes Interp. en el Servidor" 
                             code="LIS104" 
                             group="01T" 
+                            teacher="Jaime Eduardo Navarrete" 
                             img={images[4].img}
                         />
                         <UserSubjectGroup 
                             name="Lenguajes Interp. en el Servidor" 
                             code="LIS104" 
                             group="01T" 
+                            teacher="Jaime Eduardo Navarrete" 
                             img={images[4].img}
                         />
                         <UserSubjectGroup 
                             name="Lenguajes Interp. en el Servidor" 
                             code="LIS104" 
                             group="01T" 
+                            teacher="Jaime Eduardo Navarrete" 
                             img={images[4].img}
                         />
                     </div>
