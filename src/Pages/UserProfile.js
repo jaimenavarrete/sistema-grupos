@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import UserSubjectGroup from './../Components/UserSubjectGroup';
+import UserSubjectGroup from '../Components/UserProfile/UserSubjectGroup';
 
 import images from './../assets/images';
 
@@ -22,6 +22,7 @@ function UserProfile() {
                     <section className="card lg:flex-grow">
                         <h3 className="subtitle-2 mb-10">Información personal</h3>
                         <p className="flex justify-between mb-3"><span className="font-bold text-gray-700 inline-block">Usuario: </span><span>jaimenava321</span></p>
+                        <p className="flex justify-between mb-3"><span className="font-bold text-gray-700">Carrera: </span><span>Ingeniería en Ciencias de la Computación</span></p>
                         <p className="flex justify-between mb-3"><span className="font-bold text-gray-700 inline-block">Email: </span><span>jaimenava321@gmail.com</span></p>
                         <p className="flex justify-between mb-3"><span className="font-bold text-gray-700">Telefono: </span><span>12345678-9</span></p>
                         <p className="flex justify-between mb-3"><span className="font-bold text-gray-700">Fecha de nacimiento: </span><span>19-08-1999</span></p>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SubjectRegistrationTable from './../Components/SubjectRegistrationTable';
+import SubjectRegistrationTable from '../Components/SubjectRegistration/SubjectRegistrationTable';
 
 function SubjectRegistration() {
     return (
@@ -25,7 +25,7 @@ function SubjectRegistration() {
                     </div>
                     <label className="mb-5 block">
                         <span className="text-blue-500 font-bold block mb-3">Cupos disponibles:</span>
-                        <input type="text" value="1" className="bg-gray-100 text-gray-500 font-bold border-2 rounded w-32" readOnly />
+                        <input type="text" value="1" className="bg-gray-100 text-gray-500 font-bold cursor-default border-2 rounded w-32" readOnly />
                     </label>
                     <div className="flex justify-end">
                         <button className="btn-pagination mr-0 hover:bg-blue-500"><i className="las la-plus"></i> Agregar materia</button>

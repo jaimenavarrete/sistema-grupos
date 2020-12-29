@@ -1,5 +1,5 @@
-import NavBar from './Components/NavBar';
-import Footer from './Components/Footer';
+import NavBar from './Components/Header/NavBar';
+import Footer from './Components/Footer/Footer';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
 

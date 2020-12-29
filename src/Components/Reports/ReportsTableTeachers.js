@@ -1,17 +1,17 @@
 import React from 'react';
 
 import ReportsDownload from './ReportsDownload';
-import ReportsPagination from './ReportsPagination';
+import PaginationButtons from '../General/PaginationButtons';
 
-function ReportsStudents() {
+function ReportsTeacher() {
     return (
         <section className="card max-w-7xl">
-                <h4 className="subtitle-2 mb-5">Alumnos registrados</h4>
+                <h4 className="subtitle-2 mb-5">Docentes registrados</h4>
                 
                 <ReportsDownload />
 
                 <div className="overflow-x-auto">
-                    <table className="text-left min-w-max w-full mb-10">
+                    <table className="text-left mb-10 w-full min-w-max">
                         <thead>
                             <tr className="bg-blue-500 text-white border-2 border-blue-500">
                                 <th className="p-3 font-bold">N°</th>
@@ -73,10 +73,10 @@ function ReportsStudents() {
                     </table>
                 </div>
 
-                <ReportsPagination />
+                <PaginationButtons />
 
             </section>
     );
 }
 
-export default ReportsStudents;
+export default ReportsTeacher;

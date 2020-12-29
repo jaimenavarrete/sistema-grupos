@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import images from './../assets/images';
 
-import FormInput from '../Components/FormInput';
+import FormInput from '../Components/General/FormInput';
 
 function Register() {
     const handleSubmit = e => {
@@ -59,7 +59,7 @@ function Register() {
                         placeholder="Repetir contraseña:" 
                     />
 
-                    <input type="submit" value="Registrarse" className="bg-blue-500 text-white text-lg font-bold w-full py-2 cursor-pointer hover:bg-blue-600" />
+                    <input type="submit" value="Registrarse" className="btn py-3 w-full" />
                 </form>
                 <p className="text-center mb-3">¿Ya tienes una cuenta?</p>
                 <Link to="/login" className="text-blue-500 font-bold hover:underline block text-center mb-7">Inicia sesión</Link>

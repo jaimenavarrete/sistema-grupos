@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SubjectRegistrationOptions from './SubjectRegistrationOptions';
+import OptionButtons from '../General/OptionButtons';
 
 function SubjectRegistrationTable() {
     return (
@@ -23,7 +23,7 @@ function SubjectRegistrationTable() {
                             <td className="p-3">Lenguajes Interp. en el Servidor</td>
                             <td className="p-3">01T</td>
                             <td className="p-3">
-                                <SubjectRegistrationOptions />
+                                <OptionButtons />
                             </td>
                         </tr>
                         <tr className="border-2 border-blue-500">
@@ -31,7 +31,7 @@ function SubjectRegistrationTable() {
                             <td className="p-3">Lenguajes Interp. en el Servidor</td>
                             <td className="p-3">01T</td>
                             <td className="p-3">
-                                <SubjectRegistrationOptions />
+                                <OptionButtons />
                             </td>
                         </tr>
                         <tr className="bg-gray-300 border-2 border-blue-500">
@@ -39,7 +39,7 @@ function SubjectRegistrationTable() {
                             <td className="p-3">Lenguajes Interp. en el Servidor</td>
                             <td className="p-3">01T</td>
                             <td className="p-3">
-                                <SubjectRegistrationOptions />
+                                <OptionButtons />
                             </td>
                         </tr>
                         <tr className="border-2 border-blue-500">
@@ -47,7 +47,7 @@ function SubjectRegistrationTable() {
                             <td className="p-3">Lenguajes Interp. en el Servidor</td>
                             <td className="p-3">01T</td>
                             <td className="p-3">
-                                <SubjectRegistrationOptions />
+                                <OptionButtons />
                             </td>
                         </tr>
                         <tr className="bg-gray-300 border-2 border-blue-500">
@@ -55,14 +55,14 @@ function SubjectRegistrationTable() {
                             <td className="p-3">Lenguajes Interp. en el Servidor</td>
                             <td className="p-3">01T</td>
                             <td className="p-3">
-                                <SubjectRegistrationOptions />
+                                <OptionButtons />
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div className="flex justify-end">
-            <button className="btn bg-green-600 hover:bg-green-700 active:bg-green-800"><i className="las la-paper-plane"></i> Finalizar inscripción</button>
+                <button className="btn bg-green-600 py-3 px-5 hover:bg-green-700 active:bg-green-800"><i className="las la-paper-plane"></i> Finalizar inscripción</button>
             </div>
         </section>
     );

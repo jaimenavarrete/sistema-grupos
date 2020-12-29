@@ -1,16 +1,16 @@
 import React from 'react';
 
 import ReportsDownload from './ReportsDownload';
-import ReportsPagination from './ReportsPagination';
+import PaginationButtons from '../General/PaginationButtons';
 
-function ReportsGroups() {
+function ReportsStudents() {
     return (
         <section className="card max-w-7xl">
-                <h4 className="subtitle-2 mb-5">Grupos formados</h4>
+                <h4 className="subtitle-2 mb-5">Alumnos registrados</h4>
                 
                 <ReportsDownload />
 
-                <div className="overflow-x-auto w-full">
+                <div className="overflow-x-auto">
                     <table className="text-left min-w-max w-full mb-10">
                         <thead>
                             <tr className="bg-blue-500 text-white border-2 border-blue-500">
@@ -73,10 +73,10 @@ function ReportsGroups() {
                     </table>
                 </div>
 
-                <ReportsPagination />
+                <PaginationButtons />
 
             </section>
     );
 }
 
-export default ReportsGroups;
+export default ReportsStudents;

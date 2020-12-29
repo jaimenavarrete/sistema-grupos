@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import images from './../assets/images';
 
-import FormInput from '../Components/FormInput';
+import FormInput from '../Components/General/FormInput';
 
 function Login() {
     const handleSubmit = e => {
@@ -37,8 +37,9 @@ function Login() {
                         <Link to="/forgetPassword" className="text-blue-500 font-bold hover:underline">¿Olvidaste tu contraseña?</Link>
                     </div>
 
-                    <input type="submit" value="Iniciar sesión" className="bg-blue-500 text-white text-lg font-bold w-full py-2 cursor-pointer hover:bg-blue-600" />
+                    <input type="submit" value="Iniciar sesión" className="btn py-3 w-full" />
                 </form>
+
                 <p className="text-center mb-3">¿Aún no tienes cuenta?</p>
                 <Link to="/register" className="text-blue-500 font-bold hover:underline block text-center mb-7">Regístrate</Link>
             </section>

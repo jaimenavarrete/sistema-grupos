@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import NavBarButton from './NavBarButton';
 
-import images from './../assets/images';
+import images from './../../assets/images';
 
 function NavBar() {
     const showMenu = () => {

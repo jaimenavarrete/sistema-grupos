@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ReportsDownload from './ReportsDownload';
-import ReportsPagination from './ReportsPagination';
+import PaginationButtons from '../General/PaginationButtons';
 
 function ReportsPending() {
     return (
@@ -73,7 +73,7 @@ function ReportsPending() {
                     </table>
                 </div>
 
-                <ReportsPagination />
+                <PaginationButtons />
 
             </section>
     );

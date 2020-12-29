@@ -1,9 +1,9 @@
 import React from 'react';
 
-import ReportsTableTeachers from '../Components/ReportsTableTeachers';
-import ReportsTableStudents from '../Components/ReportsTableStudents';
-import ReportsTableGroups from '../Components/ReportsTableGroups';
-import ReportsTablePending from '../Components/ReportsTablePending';
+import ReportsTableTeachers from '../Components/Reports/ReportsTableTeachers';
+import ReportsTableStudents from '../Components/Reports/ReportsTableStudents';
+import ReportsTableGroups from '../Components/Reports/ReportsTableGroups';
+import ReportsTablePending from '../Components/Reports/ReportsTablePending';
 
 function Reports() {
     return (
