@@ -1,50 +1,41 @@
 {
   "name": "sistema-grupos",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@craco/craco": "^6.0.0",
-    "@tailwindcss/forms": "^0.2.1",
-    "@tailwindcss/postcss7-compat": "^2.0.2",
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.6.0",
-    "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.35",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
-    "web-vitals": "^0.2.4"
-  },
+  "version": "1.0.0",
+  "description": "Proyecto de sistema de grupos para la Universidad Don Bosco, utilizando el stack de MERN",
+  "main": "app.js",
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaimenavarrete/sistema-grupos.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [
+    "mern-stack",
+    "mongodb",
+    "express",
+    "reactjs",
+    "nodejs"
+  ],
+  "author": "Jaime Navarrete",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaimenavarrete/sistema-grupos/issues"
+  },
+  "homepage": "https://github.com/jaimenavarrete/sistema-grupos#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.2",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.13",
+    "multer": "^1.4.2",
+    "sweetalert2": "^10.13.3"
   },
   "devDependencies": {
-    "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
-    "enzyme": "^3.11.0",
-    "enzyme-to-json": "^3.6.1"
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.7"
   }
 }
